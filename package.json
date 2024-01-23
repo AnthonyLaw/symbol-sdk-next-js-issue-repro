@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@js-joda/core": "^5.6.1",
-    "next": "^13.3.1",
+    "next": "^14.1.0",
     "next-i18next": "^14.0.0",
     "prop-types": "^15.8.1",
     "query-string": "^7.1.1",
