@@ -1,0 +1,41 @@
+{
+  "name": "symbol-sdk-next-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@js-joda/core": "^5.6.1",
+    "next": "^13.3.1",
+    "next-i18next": "^14.0.0",
+    "prop-types": "^15.8.1",
+    "query-string": "^7.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.49.0",
+    "sss-module": "^1.0.4",
+    "symbol-crypto-wasm-web": "^0.1.1",
+    "symbol-sdk": "^3.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "webpack": "^5.80.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
