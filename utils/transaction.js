@@ -25,6 +25,24 @@ export const createAggregateTransferTransaction = (recipientAddress, message) =>
     return payload;
 }
 
+export const createTransferTransaction = (recipientAddress, message) => {
+    const facade = new symbolSdk.facade.SymbolFacade(config.NETWORK_IDENTIFIER);
+
+    const networkTimestamp = BigInt(90177807653);
+
+    const transaction = facade.transactionFactory.create({
+        type: 'transfer_transaction_v1',
+        recipientAddress,
+        mosaics: [],
+        message: createTransactionMessage(message),
+        deadline: new symbolSdk.symbol.NetworkTimestamp(networkTimestamp).addHours(2).timestamp
+    });
+
+    const payload = symbolSdk.utils.uint8ToHex(transaction.serialize());
+
+    return payload;
+}
+
 const createTransactionMessage = (text) => {
     const textEncoder = new TextEncoder();
 

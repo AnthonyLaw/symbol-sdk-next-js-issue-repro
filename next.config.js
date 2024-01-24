@@ -20,6 +20,8 @@ module.exports = {
 		// enable async loading of wasm files
 		config.experiments = { asyncWebAssembly: true, topLevelAwait: true, layers: true };
 
+		config.optimization.minimize= true;
+
 		return config;
 	}
 };
